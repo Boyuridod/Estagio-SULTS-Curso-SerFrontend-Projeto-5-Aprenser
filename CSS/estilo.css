@@ -1,0 +1,40 @@
+:root{
+    --fundoHeaderFooter: #252525;
+    --dourado: #ffd700;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--fundoHeaderFooter);
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    margin: 3vh;
+    height: 2em;
+}
+
+.header-navegacao{
+    margin-left: auto;
+}
+
+.header-navegacao a{
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+    padding: .4em;
+    margin: auto .2em;
+    text-decoration: none;
+}
+
+.saiba-mais{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
