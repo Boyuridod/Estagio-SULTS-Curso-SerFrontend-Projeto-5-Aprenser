@@ -1,6 +1,10 @@
 :root{
     --fundoHeaderFooter: #252525;
     --dourado: #ffd700;
+    --amarelo: #ffff00;
+    --branco: #ffffff;
+    --cinza: #a8a8a8;
+    --azul: #003464;
 }
 
 body{
@@ -18,7 +22,6 @@ header{
 
 .header-logo{
     margin: 3vh;
-    height: 2em;
 }
 
 .header-navegacao{
@@ -28,13 +31,100 @@ header{
 .header-navegacao a{
     color: var(--dourado);
     border: 1px solid var(--dourado);
-    padding: .4em;
+    padding: .4em .6em;
     margin: auto .2em;
     text-decoration: none;
+    font-size: 2em;
 }
 
 .saiba-mais{
-    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(var(--branco), var(--amarelo));
+    overflow: hidden;
+}
+
+.saiba-mais-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5em;
+}
+
+.o-saber-transforma{
+    font-size: 6em;
+}
+
+.saiba-mais-btn{
+    background-color: var(--dourado);
+    padding: 1em 3em;
+    color: var(--fundoHeaderFooter);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.saiba-mais-imagem{
+    min-height: 90vh;
+    max-width: 100%;
+}
+
+.principais-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.titulo-principais-cursos{
+    display: block;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.cursos-container{
+    display: flex;
+    margin: 2em;
+}
+
+.curso{
+    width: 100%;
+    margin: 4em;
+    border-radius: 15px;
+    box-shadow: 0em 0em 2em .5em var(--cinza);
+}
+
+.curso-imagem{
+    width: 100%;
+}
+
+.curso h1{
+    font-size: 2em;
+    margin-left: .4em;
+}
+
+.curso p{
+    margin: .7em;
+    font-size: 1.2em;
+}
+
+.mais-cursos-btn{
+    background-color: var(--dourado);
+    color: var(--fundoHeaderFooter);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1em 3em;
+}
+
+.nossa-escola{
+    display: flex;
+    background-color: var(--azul);
+}
+
+.nossa-escola-texto{
+    font-size: 3em;
+    color: var(--branco);
 }
