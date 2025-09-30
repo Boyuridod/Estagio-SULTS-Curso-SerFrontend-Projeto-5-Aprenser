@@ -123,9 +123,11 @@ header{
 .nossa-escola{
     display: flex;
     background-color: var(--azul);
+    height: 50em;
 }
 
 .nossa-escola-texto{
-    font-size: 3em;
+    font-size: 2em;
     color: var(--branco);
+    padding: 4em;
 }
